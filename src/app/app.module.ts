@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FootherComponent } from './foother/foother.component';
+import { CalendarioTareasComponent } from './calendario-tareas/calendario-tareas.component';
+import { NoticeComponent } from './notice/notice.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FootherComponent } from './foother/foother.component';
     HomeComponent,
     LayoutComponent,
     HeaderComponent,
-    FootherComponent
+    FootherComponent,
+    CalendarioTareasComponent,
+    NoticeComponent
   ],
   imports: [
     BrowserModule,

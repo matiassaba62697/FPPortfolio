@@ -1,1 +1,15 @@
-<p>layout works!</p>
+<div class="body">
+<div class="carrusel-wrapper">
+  <div
+    class="background"
+    *ngFor="let img of imagenes; let i = index"
+    [ngClass]="{ 'active': i === imagenActualIndex }"
+    [ngStyle]="{ 'background-image': 'url(' + img + ')' }"
+  ></div>
+  <div class="contenido-superpuesto">
+    <h1>MisRoomies.com</h1>
+     <p>Una pagina que te permite comunicarte con tus roomies de manera 
+        secilla, enviarles notificaciones grupales, gestionar tareas, celebrar eventos, y gestionar la lista
+    de compras necesarias para la casa, demas de poder crear cada uno su propio posteo divertido</p>
+  </div>
+</div>

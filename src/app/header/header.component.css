@@ -1,9 +1,10 @@
 .body{
     background-color: black;
     height: 100px;
-    width: 100%;
+    width: 100vw;
     margin: 0;
     display: flex;
+    color: white;
 }
 .logos{
       border: white 1px solid ;
@@ -27,11 +28,30 @@
     width: 20%;
     height: 100%;
     cursor: pointer;
-    color: white;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
-.nombComp{
-    color: white;
+.profile{
+       display: flex;
+    align-items: center; 
+    justify-content: center;
 
 }
+.imgProfile{
+    width: 20%;
+    height: 80%;
+    border-radius: 30%;
+}
+.name{
+    font-size: 100%;
+    margin: 5px;
+}
+.nombComp{
+          display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+
+

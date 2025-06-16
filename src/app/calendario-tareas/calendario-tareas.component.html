@@ -1,0 +1,41 @@
+<div class="body">
+
+  <div class="calendar">
+    <div class="calendar-header">
+      <h2>{{ monthName | titlecase }} {{ year }}</h2>
+    </div>
+
+    <div class="calendar-grid">
+      <div class="day-name" *ngFor="let name of dayNames">{{ name }}</div>
+
+      <div *ngFor="let empty of [].constructor(startDay)" class="empty"></div>
+
+      <div *ngFor="let day of days" [class.today]="isToday(day)" class="day">
+        {{ day }}
+      </div>
+    </div>
+  </div>
+  <!-- tareas -->
+  <div class="asignaciones">
+    <div class="table-container">
+      <h2>{{ title }}</h2>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Descripcion</th>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td> <img [src]="user.icon" [style.background]="user.color"  alt="err" width="32" height="32">
+             </td>
+            <td>{{ user.tareas }}</td>
+            <td>{{ user.nombre }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

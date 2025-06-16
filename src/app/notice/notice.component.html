@@ -1,0 +1,16 @@
+<div class="body">
+    <div style="display: flex; align-items: center; justify-content: center; height: 10%; width: 100%;">
+        <p style="font-size: 32px;">Noticias</p>
+    </div>
+    <div class="news">
+    </div>
+    <div *ngFor="let new of news" style="width: 50%">
+        <div >
+            <img [src]="new.imagen" [alt]=""  style="z-index: -1; width: 95%; height: 500px; margin: 5px;" />
+            <div class="contenido-superpuesto">
+                <h1>{{new.titulo}}</h1>
+                <p>{{new.texto}}</p>
+            </div>
+        </div>
+    </div>
+</div>
